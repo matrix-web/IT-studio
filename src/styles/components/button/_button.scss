@@ -1,0 +1,28 @@
+.button {
+    display: inline-block;
+    padding: 13px 37px;
+    background: $accent;
+    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+    border-radius: 30px;
+    border: none;
+
+    font-weight: $medium;
+    line-height: 1.25;
+    text-align: center;
+    text-decoration: none;
+    color: $white;
+    cursor: pointer;
+    transition: background-color .3s ease-in;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        background-color: $accent + 10%;
+    }
+
+    &:active {
+        background-color: $accent - 10%;
+    }
+}
