@@ -2,9 +2,10 @@
 @import "./base/base";
 @import "./base/mixins";
 
-
 // Components
 @import "./components/button/button";
+@import "./components/mouse/mouse";
+@import "./components/slider-nav/slider-nav";
 
 // sections
 @import "./sections/header";
