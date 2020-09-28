@@ -8,6 +8,7 @@ import fonts from "./tasks/fonts"
 import server from "./tasks/server"
 import images from "./tasks/image"
 import favicons from "./tasks/favicons"
+import copyLibs from "./tasks/copy-libs"
 
 const paths = {
     html: {
@@ -47,18 +48,30 @@ const paths = {
     favicons: {
         src: "./src/img/favicon/*.{jpg,jpeg,png,gif}",
         dist: "./dist/img/favicons/",
+    },
+    libs: {
+        css: {
+            src: "./src/libs/css/*.css",
+            dist: "./dist/libs/css",
+            watch: "./src/libs/css/**/*.css"
+        },
+        js: {
+            src: "./src/libs/js/*.js",
+            dist: "./dist/libs/js",
+            watch: "./src/libs/js/**/*.js"
+        }
     }
 }
 
 export { paths }
 
 export const development = series(cleanDist,
-    parallel([processHTML, styles, scripts, images, sprites, fonts, favicons]),
+    parallel([processHTML, styles, scripts, images, sprites, fonts, favicons, copyLibs]),
     parallel(server)
 )
 
 export const production = series(cleanDist,
-    parallel([processHTML, styles, scripts, images, sprites, fonts, favicons])
+    parallel([processHTML, styles, scripts, images, sprites, fonts, favicons, copyLibs])
 )
 
 export default development
