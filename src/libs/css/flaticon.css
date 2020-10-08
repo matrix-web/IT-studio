@@ -1,12 +1,12 @@
 /*
   Flaticon icon font: Flaticon
-  Creation date: 28/09/2020 08:08
+  Creation date: 08/10/2020 10:42
 */
 
 @font-face {
   font-family: "Flaticon";
   src: url("../../fonts/Flaticon.woff2") format("woff2");
-  src: url("../../fonts/Flaticon.woff2") format("woff");
+  src: url("../../fonts/Flaticon.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -31,3 +31,6 @@
 .flaticon-smartphone:before { content: "\f10a"; }
 .flaticon-pencil:before { content: "\f10b"; }
 .flaticon-search:before { content: "\f10c"; }
+.flaticon-right-arrow:before { content: "\f10d"; }
+.flaticon-user:before { content: "\f10e"; }
+.flaticon-calendar:before { content: "\f10f"; }
