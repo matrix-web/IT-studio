@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="./libs/css/flaticon.css">
+    <link rel="stylesheet" href="./css/blog.css">
+    <title>IT-студия - блог</title>
+</head>
+<body>
+    <header class="header blog-header">
+        <div class="header-wrapper">
+            <div class="container">
+                <nav class="header-nav">
+                    <a class="header-nav__link" href="#"><span>Главная</span></a>
+                    <a class="header-nav__link" href="#"><span>Наши проекты</span></a>
+                    <a class="header-nav__link" href="#"><span>Услуги</span></a>
+                    <a class="header-nav__link" href="#"><span>Новости</span></a>
+                    <a class="header-nav__link" href="#"><span>Контакты</span></a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="blog-wrapper">
+            <div class="container">
+                <div class="blog-row">
+                    <div class="blog-col-1">
+                        <div class="blog-posts">
+                            <article class="blog-post">
+                                <div class="blog-post__img">
+                                    <img class="img-fluid" src="./img/posts/m-blog.jpg" alt="post">
+                                    <a class="blog-post__date" href="#!">
+                                        <span>15</span>
+                                        <p>Jun</p>
+                                    </a>
+                                </div>
+                                <div class="blog-post__details">
+                                    <a href="#!">
+                                        <h3>Google inks pact for new 35-storey office</h3>
+                                    </a>
+                                    <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
+                                    <ul class="blog-post__info-link">
+                                        <li>
+                                            <a href="#!">Travel, Lifestyle</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!">03 Comments</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <nav class="blog-pagination">
+                                <ul class="pagination">
+                                    <li class="pagination__page-item">
+                                        <a class="pagination__link" aria-label="Previous" href="#!">
+                                            <span aria-hidden="true">
+                                                <i class="flaticon-left-arrow"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="pagination__page-item">
+                                        <a class="pagination__link" href="#!">1</a>
+                                    </li>
+                                    <li class="pagination__page-item active">
+                                        <a class="pagination__link" href="#!">2</a>
+                                    </li>
+                                    <li class="pagination__page-item">
+                                        <a class="pagination__link" aria-label="Next" href="#!">
+                                            <span aria-hidden="true">
+                                                <i class="flaticon-next"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="blog-col-2">
+                        <div class="blog-sidebar">
+                            <aside class="blog-sidebar-widget">
+                                <form action="#!">
+                                    <div class="form-group blog-sidebar__form-group">
+                                        <input type="text" class="blog-sidebar__form-input" placeholder="Поиск">
+                                        <button type="button" class="blog-sidebar__form-button">
+                                            <i class="flaticon-search"></i>
+                                        </button>
+                                    </div>
+                                    <button class="primary-button blog-sidebar__button-search" type="submit" data-text="Поиск">
+                                        <span>П</span>
+                                        <span>о</span>
+                                        <span>и</span>
+                                        <span>с</span>
+                                        <span>к</span>
+                                    </button>
+                                </form>
+                            </aside>
+                            <aside class="blog-sidebar-widget">
+                                <h4 class="blog-sidebar__widget-title">Category</h4>
+                                <ul class="blog-sidebar__category-list">
+                                    <li>
+                                        <a href="#!">
+                                            <p>Resaurant food</p>
+                                            <p>(37)</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            <p>Travel news</p>
+                                            <p>(10)</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            <p>Modern technology</p>
+                                            <p>(03)</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            <p>Product</p>
+                                            <p>(11)</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            <p>Inspiration</p>
+                                            <p>(21)</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            <p>Health Care</p>
+                                            <p>(09)</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    @@include("./html/sections/footer.html")
+
+</body>
+</html>
