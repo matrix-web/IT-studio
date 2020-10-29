@@ -1,0 +1,35 @@
+$linkHover: #1345e6;
+$linkActive: #113dcf;
+
+.tags-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tags-list__item {
+    margin-right: 5px;
+
+
+    &-link {
+        display: inline-block;
+        border: 1px solid #eee;
+        background-color: $white;
+        padding: 4px 20px;
+        margin-bottom: 8px;
+        transition: background-color .3s ease 0s;
+        font-size: .8125rem;
+        line-height: 1.68;
+        text-decoration: none;
+        color: $grey;
+
+        &:hover {
+            background-color: $linkHover;
+            color: $white;
+        }
+
+        &:active {
+            background-color: $linkActive;
+            color: $white;
+        }
+    }
+}

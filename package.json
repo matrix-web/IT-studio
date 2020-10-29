@@ -7,7 +7,13 @@
     "start": "gulp",
     "build": "gulp production --production"
   },
-  "keywords": ["gulp", "webpack", "html", "scss", "build"],
+  "keywords": [
+    "gulp",
+    "webpack",
+    "html",
+    "scss",
+    "build"
+  ],
   "author": "Ivan Plastun",
   "license": "ISC",
   "browserslist": [

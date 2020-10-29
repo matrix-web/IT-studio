@@ -3,7 +3,11 @@ $linkHover: #1345e6;
 $linkActive: #113dcf;
 
 .blog-post {
+    margin-bottom: 50px;
 
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .blog-post__img {
@@ -65,6 +69,17 @@ $linkActive: #113dcf;
     p {
         margin-bottom: 30px;
     }
+}
+
+.blog-post__details-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog-post__info-date {
+    font-size: .875rem;
+    color: $grey;
 }
 
 .blog-post__info-link {
