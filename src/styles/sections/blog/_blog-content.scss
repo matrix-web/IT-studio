@@ -1,0 +1,26 @@
+.blog-wrapper {
+    padding: 120px 0;
+}
+
+.blog-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog-col-1 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+    padding: 0 15px;
+}
+
+.blog-col-2 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    padding: 0 15px;
+}
+
+.blog-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}

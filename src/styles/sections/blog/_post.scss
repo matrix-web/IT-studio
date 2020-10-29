@@ -1,0 +1,117 @@
+$backgroundDate: #1555d4;
+$linkHover: #1345e6;
+$linkActive: #113dcf;
+
+.blog-post {
+    margin-bottom: 50px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.blog-post__img {
+    position: relative;
+}
+
+.blog-post__date {
+    position: absolute;
+    bottom: -20px;
+    left: 40px;
+    padding: 13px 30px;
+    display: block;
+    color: $white;
+    background: $backgroundDate;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+
+    span {
+        display: block;
+        font-size: 1.875rem;
+        font-weight: 600;
+        color: $white;
+        line-height: 1.2;
+    }
+
+    p {
+        font-size: 1.125rem;
+        color: $white;
+    }
+}
+
+.blog-post__details {
+    padding: 60px 30px 35px 35px;
+    box-shadow: 0 10px 20px 0 rgba(221, 221, 221, .3);
+
+    a {
+        display: inline-block;
+        text-decoration: none;
+        color: #05364d;
+        transition: color .3s ease-in-out;
+
+        &:focus,
+        &:hover {
+            color: $linkHover;
+        }
+
+        &:active {
+            color: $linkActive;
+        }
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        font-weight: 600;
+    }
+
+    p {
+        margin-bottom: 30px;
+    }
+}
+
+.blog-post__details-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog-post__info-date {
+    font-size: .875rem;
+    color: $grey;
+}
+
+.blog-post__info-link {
+
+    li {
+        display: inline-block;
+        font-size: .875rem;
+
+        &:last-child {
+            &::after {
+                content: "";
+                padding: 0;
+            }
+        }
+
+        &::after {
+            content: "|";
+            padding: 0 10px;
+        }
+
+        a {
+            transition: all .3s ease-in-out;
+            color: $grey;
+
+            &:focus,
+            &:hover {
+                color: $linkHover;
+            }
+
+            &:active {
+                color: $linkActive;
+            }
+        }
+    }
+}

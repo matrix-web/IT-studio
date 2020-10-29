@@ -18,7 +18,7 @@ const paths = {
         dist: './dist'
     },
     styles: {
-        src: "./src/styles/main.{scss,sass}",
+        src: ["./src/styles/main.{scss,sass}", "./src/styles/blog.{scss,sass}"],
         watch: "./src/styles/**/*.{scss,sass}",
         dist: "./dist/css"
     },

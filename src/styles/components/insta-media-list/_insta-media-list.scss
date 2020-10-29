@@ -1,0 +1,12 @@
+.insta-media-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -6px;
+    margin-left: -6px;
+}
+.insta-media-list__item {
+    width: 33.33%;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-bottom: 15px;
+}
