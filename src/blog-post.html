@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./libs/css/flaticon.css">
+    <link rel="stylesheet" href="./css/blog.css">
+    <title>IT-studio пост в блоге</title>
+</head>
+<body>
+    <header class="header blog-header">
+        <div class="header-wrapper">
+            <div class="container">
+                <nav class="header-nav">
+                    <a class="header-nav__link" href="#"><span>Главная</span></a>
+                    <a class="header-nav__link" href="#"><span>Наши проекты</span></a>
+                    <a class="header-nav__link" href="#"><span>Услуги</span></a>
+                    <a class="header-nav__link" href="#"><span>Новости</span></a>
+                    <a class="header-nav__link" href="#"><span>Контакты</span></a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="blog-wrapper">
+            <div class="container">
+                <div class="blog-row">
+                    <div class="blog-col-1">
+                        <article class="single-post">
+                            <div class="single-post__img">
+                                <img src="./img/posts/algo.jpg" alt="алгоритмы">
+                            </div>
+                            <div class="single-post__details">
+                                <h2>Двоичное дерево поиска на JavaScript</h2>
+                                <ul class="blog-info-link">
+                                    <li>
+                                        <a href="#"><i class="far fa-user"></i> Javascript, Алгоритмы</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="far fa-comment"></i> 03 Комментария</a>
+                                    </li>
+                                </ul>
+                                <p><strong>Деревья</strong> представляют собой непоследовательную структуру данных, которая полезна для хранения информации, и быстрого поиска. Другими словами, они являются абстрактной моделью иерархической структуры (представьте себе семейное древо). Деревья состоят из <strong>узлов</strong> (Node) с родительско-дочерними отношениями.</p>
+                                <h2>Двоичное дерево и Двоичное дерево поиска</h2>
+                                <p>Узел в <strong>двоичном дереве</strong> или как его еще называют <strong>бинарном</strong> имеет не более двух дочерних элементов: левого и правого элемента. Это определение позволяет вам писать алгоритмы для более эффективной вставки, поиска и удаления узлов. Обратите внимание на изображение выше, чтобы увидеть двоичное дерево и ключевой словарь, который я буду использовать в этой статье.</p>
+                                <p>Как вы, вероятно, можете догадаться, двоичное дерево поиска (<strong>binary search tree — BST</strong>) — это тоже двоичное дерево. Основное отличие состоит в том, что BST позволяет хранить отсортированные узлы с меньшим значением слева и узлы с большим значением справа. Как показано на рисунке выше.</p>
+                                <h2>Создание узлов и BST классов</h2>
+                                <p>Я обычно настоятельно рекомендую писать код по мере чтения статьи в каком нибудь онлайн редакторе и постоянно тестировать / играть с тем, что мы пишем. Для начала мы создадим наш класс Node, который будет представлять узлы в нашем BST:</p>
+                                <p>Нашим следующим шагом будет реализация основных методов. Вот что мы рассмотрим:</p>
+                                <ul>
+                                    <li>insert(data)</li>
+                                    <li>inOrderTraverse()</li>
+                                    <li>preOrderTraverse()</li>
+                                    <li>postOrderTraverse()</li>
+                                    <li>search(data)</li>
+                                    <li>remove(data)</li>
+                                </ul>
+                                <div class="quote-wrapper">
+                                    <blockquote class="quote">
+                                        Пример цитаты
+                                    </blockquote>
+                                </div>
+                                <h2>Вставка узлов в BST</h2>
+                                <p>Чтобы вставить новый узел в дерево, нужно выполнить два шага:</p>
+                                <ol>
+                                    <li><strong>Проверить, является ли вставка особым случаем</strong>. Другими словами, нам нужно проверить, является ли узел, который мы пытаемся добавить, первым в дереве (то есть если какое либо значение у атрибута <strong>root</strong>). Если это так (то есть root == null), нам просто нужно указать первый (корневой) узел для этого нового узла, создав экземпляр класса Node и присвоив его корневому свойству <strong>root</strong>.</li>
+                                    <li><strong>Если первое условие не выполняется тогда просто добавить узел в соответствующую позицию</strong>.</li>
+                                </ol>
+                                <p>В итоге, <strong>insert(data)</strong> создает новый узел <strong>Node</strong> со значением <strong>data</strong> и, если дерево пустое, устанавливает этот узел в качестве корня дерева, в противном случае вызывается <strong>insertNode(this.root, newNode)</strong>. <strong>insertNode(node, newNode)</strong> — наш вспомогательный метод, который отвечает за сравнение данных нового узла с данными текущего узла и рекурсивное перемещение влево или вправо, соответственно, до тех пор, пока не найдет правильный узел с нулевым значением, в который можно добавить новый узел.</p>
+                            </div>
+                        </article>
+                        <div class="navigation-posts">
+                            <div class="info-panel">
+                                <p class="like-info">
+                                    <a href="#!" class="like-info__icon"><i class="far fa-heart"></i></a>
+                                    Lily и еще 4 людям нравится
+                                </p>
+                                <div class="count-comments">
+                                    <a href="#">
+                                        <span><i class="far fa-comment"></i></span>
+                                        03 комментария
+                                    </a>
+                                </div>
+                                <ul class="social-icons">
+                                    <li>
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-wordpress-simple"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="navigation-area">
+                                <div class="navigation-area-row">
+                                    <div class="navigation-area-col-1">
+                                        <div class="navigation-area__thumb">
+                                            <a href="#">
+                                                <img src="./img/posts/preview/vue.jpg" alt="vue.js">
+                                            </a>
+                                            <div class="navigation-arrow">
+                                                <a href="#">
+                                                    <i class="arrow-icon flaticon-left-arrow"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="navigation-details">
+                                            <p>Предыдущий пост</p>
+                                            <a href="#">
+                                                <h4>Реактивность во Vue.js.</h4>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="navigation-area-col-2">
+                                        <div class="navigation-area__thumb">
+                                            <a href="#">
+                                                <img src="./img/posts/preview/javascript.jpg" alt="next">
+                                            </a>
+                                            <div class="navigation-arrow">
+                                                <a href="#">
+                                                    <i class="arrow-icon flaticon-next"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="navigation-details">
+                                            <p>Следующий пост</p>
+                                            <a href="#">
+                                                <h4>Осваиваем JavaScript ES6 Symbol</h4>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="blog-author">
+                            <div class="blog-author__img">
+                                <img src="./img/posts/author.png" alt="author">
+                            </div>
+                            <div class="blog-author__info">
+                                <a href="#">
+                                    <h4>Harvard milan</h4>
+                                </a>
+                                <p>Если вы найдете какой-либо из моих постов интересным или просто хотите пообщаться, свяжитесь со мной в LinkedIn! Я люблю узнавать о чужих историях и всегда открыт для обмена ресурсами/советами/и т. д.!</p>
+                            </div>
+                        </div>
+                        <div class="comments-area">
+                            <h4>03 Комментария</h4>
+                            <div class="comment-list">
+                                <div class="single-comment">
+                                    <div class="single-comment__thumb">
+                                        <img src="./img/posts/c1.png" alt="user">
+                                    </div>
+                                    <div class="single-comment__description">
+                                        <p>Multiply sea night grass fourth day sea lesser rule open subdue female fill which them Blessed, give fill lesser bearing multiply sea night grass fourth day sea lesser</p>
+                                        <div class="single-comment__info">
+                                            <div>
+                                                <h5>Emilly Blunt
+                                                </h5>
+                                                <p class="single-comment__date">December 4, 2017 at 3:12 pm </p>
+                                            </div>
+                                            <div class="reply-wrapper">
+                                                <a class="reply-link" href="#!">reply</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-list">
+                                <div class="single-comment">
+                                    <div class="single-comment__thumb">
+                                        <img src="./img/posts/c1.png" alt="user">
+                                    </div>
+                                    <div class="single-comment__description">
+                                        <p>Multiply sea night grass fourth day sea lesser rule open subdue female fill which them Blessed, give fill lesser bearing multiply sea night grass fourth day sea lesser</p>
+                                        <div class="single-comment__info">
+                                            <div>
+                                                <h5>Emilly Blunt
+                                                </h5>
+                                                <p class="single-comment__date">December 4, 2017 at 3:12 pm </p>
+                                            </div>
+                                            <div class="reply-wrapper">
+                                                <a class="reply-link" href="#!">reply</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-list">
+                                <div class="single-comment">
+                                    <div class="single-comment__thumb">
+                                        <img src="./img/posts/c1.png" alt="user">
+                                    </div>
+                                    <div class="single-comment__description">
+                                        <p>Multiply sea night grass fourth day sea lesser rule open subdue female fill which them Blessed, give fill lesser bearing multiply sea night grass fourth day sea lesser</p>
+                                        <div class="single-comment__info">
+                                            <div>
+                                                <h5>Emilly Blunt
+                                                </h5>
+                                                <p class="single-comment__date">December 4, 2017 at 3:12 pm </p>
+                                            </div>
+                                            <div class="reply-wrapper">
+                                                <a class="reply-link" href="#!">reply</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-form">
+                            <h4>Leave a Reply</h4>
+                            <form action="#" class="form-contact">
+                                <div class="form-contact-row">
+                                    <div class="form-field-group">
+                                        <textarea class="form-control" name="comment" id="comment" cols="30" rows="10" placeholder="Write comment"></textarea>
+                                    </div>
+                                    <div class="form-field-group">
+                                        <div class="form-field-group__box mr-30">
+                                            <input class="form-control" type="text" name="name" placeholder="Name">
+                                        </div>
+                                        <div class="form-field-group__box">
+                                            <input class="form-control" type="email" name="email" placeholder="E-mail">
+                                        </div>
+                                    </div>
+                                    <div class="form-field-group">
+                                        <input class="form-control" type="text" name="website" placeholder="Website">
+                                    </div>
+                                    <div class="form-field-group">
+                                        <button class="form-contact__button primary-button" type="submit" data-text="Отправить сообщение">
+                                            <span>О</span>
+                                            <span>т</span>
+                                            <span>п</span>
+                                            <span>р</span>
+                                            <span>а</span>
+                                            <span>в</span>
+                                            <span>и</span>
+                                            <span>т</span>
+                                            <span>ь</span>
+                                            <span></span>
+                                            <span>с</span>
+                                            <span>о</span>
+                                            <span>о</span>
+                                            <span>б</span>
+                                            <span>щ</span>
+                                            <span>е</span>
+                                            <span>н</span>
+                                            <span>и</span>
+                                            <span>е</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="blog-col-2">
+                        @@include("./html/sections/blog/sidebar.html")
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    @@include("./html/sections/footer.html")
+</body>
+</html>
