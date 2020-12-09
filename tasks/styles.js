@@ -47,7 +47,7 @@ function styles () {
                     removeEmpty: true,
                     removeDuplicateFontRules: true,
                     removeDuplicateMediaBlocks: true,
-                    removeDuplicateRules: true,
+                    removeDuplicateRules: false,
                     removeUnusedAtRules: false
                 }
             }

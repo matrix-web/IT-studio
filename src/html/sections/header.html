@@ -1,13 +1,22 @@
 <header class="header">
     <div class="header-wrapper">
-        <div class="container">
-            <nav class="header-nav">
+        <div class="container container--position-relative">
+            <nav class="header-nav" aria-label="nav">
                 <a class="header-nav__link" href="#"><span>Главная</span></a>
                 <a class="header-nav__link" href="#"><span>Наши проекты</span></a>
                 <a class="header-nav__link" href="#"><span>Услуги</span></a>
                 <a class="header-nav__link" href="#"><span>Новости</span></a>
                 <a class="header-nav__link" href="#"><span>Контакты</span></a>
             </nav>
+            <!-- <button class="header__nav-mobile header__nav-mobile--visible">
+                <span></span>
+            </button> -->
+
+            <button class="header__nav-mobile" aria-label="nav-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </div>
     <div class="container">
@@ -15,7 +24,6 @@
             <div class="header-info">
                 <span class="header__subtitle">Передовая IT студия</span>
                 <h1 class="header__title">Мы создаем легкие решения сложных задач</h1>
-                <!-- <a href="#!" class="button header__button">Наши проекты</a> -->
                 <a href="#!" class="primary-button header__button" data-text="Наши проекты">
                     <span>Н</span>
                     <span>а</span>
@@ -44,7 +52,7 @@
         </div>
     </a>
     <div class="slider-nav">
-        <button class="slider-nav__button slider-nav--prev"><i class="flaticon-left-arrow"></i></button>
-        <button class="slider-nav__button slider-nav--next"><i class="flaticon-next"></i></button>
+        <button class="slider-nav__button slider-nav--prev" aria-label="nav-previous"><i class="flaticon-left-arrow"></i></button>
+        <button class="slider-nav__button slider-nav--next" aria-label="nav-next"><i class="flaticon-next"></i></button>
     </div>
 </header>
