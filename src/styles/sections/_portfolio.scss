@@ -1,25 +1,33 @@
 .portfolio {
     background-color: $backgroundLigthGrey;
-    padding: 80px 0 130px;
+    padding: 50px 0;
     text-align: center;
+
+    @media (min-width: 992px) {
+        padding: 80px 0 130px;
+    }
 }
 
-.portfolio-head {
+.portfolio__head {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.portfolio-description {
+.portfolio__description {
     max-width: 730px;
-    margin-top: 40px;
+    margin-top: 20px;
+
+    @media (min-width: 992px) {
+        margin-top: 40px;
+    }
 }
 
-.portfolio-projects {
+.portfolio-works {
     margin: 65px 0 50px;
 }
 
-.portfolio-projects__project {
+.portfolio-works__project {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 50px;
@@ -29,7 +37,7 @@
     }
 }
 
-.portfolio-projects__project-link {
+.portfolio-works__link {
     position: relative;
     padding-right: 20px;
     text-decoration: none;
@@ -61,36 +69,48 @@
     }
 }
 
-.portfolio-projects__project-preview {
-    flex: 0 0 50%;
-    max-width: 50%;
+.portfolio-works__preview {
+
+    @media (min-width: 992px) {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
 }
 
-.portfolio-projects__project-info {
-    flex: 0 0 42%;
-    max-width: 42%;
-    text-align: left;
+@media (min-width: 992px) {
+    .portfolio-works__preview--indents {
+        margin-left: 60px;
+    }
 }
 
-.blockquote {
-    margin: 0;
+@media (min-width: 1200px) {
+    .portfolio-works__preview--indents {
+        margin-left: 90px;
+    }
+}
+
+.portfolio-works__info {
+    order: -1;
     margin-bottom: 30px;
-    font-size: 1.25rem;
+    text-align: left;
 
-    p {
-        padding-left: 20px;
-        color: $dark;
-        font-style: italic;
+    @media (min-width: 992px) {
+        position: sticky;
+        top: 7em;
+        flex: 0 0 42%;
+        max-width: 42%;
+        order: 0;
+        margin-bottom: 0;
+    }
+}
 
-        &:first-child {
-            border-left: 10px solid $lightGrey;
-            margin-bottom: 20px;
-        }
+.portfolio-works__info--indents {
+
+    @media (min-width: 1200px) {
+        margin-left: 90px;
     }
 
-    img {
-        width: 40px;
-        border-radius: 50%;
-        margin-right: 1rem;
+    @media (min-width: 992px) {
+        margin-left: 60px;
     }
 }
