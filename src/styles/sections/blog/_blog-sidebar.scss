@@ -3,11 +3,15 @@ $linkActive: #113dcf;
 
 .blog-sidebar-widget {
     background-color: #fbf9ff;
-    padding: 30px;
+    padding: 25px;
     margin-bottom: 30px;
 
     &:last-child {
         margin-bottom: 0;
+    }
+
+    @media (min-width: 1200px) {
+        padding: 30px;
     }
 }
 
@@ -74,13 +78,17 @@ $linkActive: #113dcf;
     font-size: 1.25rem;
     font-weight: $bold;
     line-height: 1.2;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 
     &::after {
         content: "";
         display: block;
         padding-top: 15px;
         border-bottom: 1px solid #f0e9ff;
+    }
+
+    @media (min-width: 1200px) {
+        margin-bottom: 40px;
     }
 }
 
