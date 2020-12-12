@@ -1,5 +1,9 @@
 .services {
-    padding: 108px 0;
+    padding: 50px 0;
+
+    @media (min-width: 992px) {
+        padding: 108px 0;
+    }
 }
 
 .services__title-2 {
@@ -18,9 +22,13 @@
 
 .services-items {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 55px;
+
+    @media (min-width: 1200px) {
+        justify-content: space-between;
+    }
 }
 
 .services-items__service {
