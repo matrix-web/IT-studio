@@ -1,9 +1,13 @@
 .insta-media-list {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -6px;
-    margin-left: -6px;
+    justify-content: center;
+
+    @media (min-width: 1200px) {
+        justify-content: flex-start;
+    }
 }
+
 .insta-media-list__item {
     padding-left: 6px;
     padding-right: 6px;
@@ -12,4 +16,17 @@
     @media (min-width: 1200px) {
         width: 33.33%;
     }
+}
+
+.insta-media-list__link {
+    display: block;
+    overflow: hidden;
+}
+
+.insta-media-list__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
 }
