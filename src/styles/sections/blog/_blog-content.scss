@@ -14,17 +14,16 @@
 .blog-col-1 {
     flex: 1 0 100%;
     max-width: 100%;
-    // padding: 0 15px;
 
     @media (min-width: 992px) {
-        lex: 0 0 66.666667%;
+        flex: 0 0 66.666667%;
         max-width: 66.666667%;
+        padding: 0 15px;
     }
 
 }
 
 .blog-col-2 {
-    display: none;
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
     padding: 0 15px;

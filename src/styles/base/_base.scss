@@ -16,6 +16,23 @@ body {
     font-family: $baseFont;
     font-weight: $regular;
     font-style: normal;
+    user-select: none;
+}
+
+body.active {
+    overflow: hidden;
+}
+
+body.right {
+    touch-action: pan-right;
+}
+
+body.left {
+    touch-action: pan-left;
+}
+
+body.left.right {
+    touch-action: pan-y;
 }
 
 h1, h2, h3, h4, h5, h6 {
