@@ -16,9 +16,9 @@ $linkActive: #113dcf;
 
 .blog-post__date {
     position: absolute;
-    bottom: -20px;
-    left: 40px;
-    padding: 13px 30px;
+    bottom: -25px;
+    left: 20px;
+    padding: 10px 25px;
     display: block;
     color: $white;
     background: $backgroundDate;
@@ -28,20 +28,30 @@ $linkActive: #113dcf;
 
     span {
         display: block;
-        font-size: 1.875rem;
+        font-size: 1.575rem;
         font-weight: 600;
         color: $white;
         line-height: 1.2;
+
+        @media (min-width: 480px) {
+            font-size: 1.875rem;
+        }
     }
 
     p {
         font-size: 1.125rem;
         color: $white;
     }
+
+    @media (min-width: 480px) {
+        padding: 13px 30px;
+        left: 40px;
+        bottom: -20px;
+    }
 }
 
 .blog-post__details {
-    padding: 60px 30px 35px 35px;
+    padding: 50px 20px 25px 20px;
     box-shadow: 0 10px 20px 0 rgba(221, 221, 221, .3);
 
     a {
@@ -69,17 +79,32 @@ $linkActive: #113dcf;
     p {
         margin-bottom: 30px;
     }
+
+    @media (min-width: 768px) {
+        padding: 60px 30px 35px 35px;
+    }
 }
 
 .blog-post__details-wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+
+    @media (min-width: 480px) {
+        flex-direction: row;
+        align-items: center;
+    }
 }
 
 .blog-post__info-date {
     font-size: .875rem;
     color: $grey;
+    margin-top: 5px;
+
+    @media (min-width: 480px) {
+        margin-top: 0;
+    }
 }
 
 .blog-post__info-link {
@@ -97,7 +122,11 @@ $linkActive: #113dcf;
 
         &::after {
             content: "|";
-            padding: 0 10px;
+            padding: 0 5px;
+
+            @media (min-width: 480px) {
+                padding: 0 10px;
+            }
         }
 
         a {

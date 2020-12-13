@@ -15,6 +15,13 @@ $linkActive: #113dcf;
     max-width: 80px;
     max-height: 80px;
     overflow: hidden;
+
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+    }
 }
 
 .blog-post-media__body {

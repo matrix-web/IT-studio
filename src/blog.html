@@ -14,13 +14,18 @@
     <header class="header blog-header">
         <div class="header-wrapper">
             <div class="container">
-                <nav class="header-nav">
+                <nav class="header-nav" aria-label="navigation">
                     <a class="header-nav__link" href="#"><span>Главная</span></a>
                     <a class="header-nav__link" href="#"><span>Наши проекты</span></a>
                     <a class="header-nav__link" href="#"><span>Услуги</span></a>
                     <a class="header-nav__link" href="#"><span>Новости</span></a>
                     <a class="header-nav__link" href="#"><span>Контакты</span></a>
                 </nav>
+                <button class="header__nav-mobile" aria-label="nav-button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </header>
@@ -38,7 +43,8 @@
             </div>
         </div>
     </main>
-
     @@include("./html/sections/footer.html")
+
+    <script src="./js/main.js"></script>
 </body>
 </html>
