@@ -1,0 +1,50 @@
+.scroll-to-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 50px;
+    bottom: 25px;
+    z-index: 1;
+    background-color: #4985ff;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.scroll-to-top__arrow {
+    transform: rotate(90deg);
+}
+
+// Progress
+.progress {
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    right: 50px;
+    bottom: 25px;
+    z-index: 1;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.progress__icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: rotate(90deg) translate(-50%, 45%);
+    transform-origin: center;
+    color: #00B7AB;
+    font-weight: bold;
+}
+
+.progress__circle {
+    transform: rotate(-90deg);
+    transform-origin: center;
+    fill: transparent;
+}
+

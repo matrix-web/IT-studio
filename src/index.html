@@ -8,6 +8,7 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap">
         <link rel="stylesheet" href="./libs/css/flaticon.css">
@@ -23,6 +24,14 @@
         @@include("./html/sections/video.html")
         @@include("./html/sections/subscribe.html")
         @@include("./html/sections/footer.html")
+        <div class="progress" hidden>
+            <i class="flaticon-left-arrow progress__icon"></i>
+            <svg class="progress__box" viewBox="-1 -1 120 120" width="100%" height="100%">
+                <circle id="default-circle" class="progress__circle progress__circle--grey" cx="60" cy="60" r="52" stroke="#aeaeae" stroke-width="4"></circle>
+                <circle id="active-circle" class="progress__circle progress__circle--green active" cx="60" cy="60" r="52" stroke-width="4" stroke="#00B7AB" stroke-dasharray="0" stroke-dashoffset="0"></circle>
+            </svg>
+        </div>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script src="./js/main.js"></script>
     </body>
 </html>
