@@ -3,16 +3,46 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>IT-Студия</title>
-        <meta name="theme-color" content="#fff">
+        <title>Advanced Studio - Мы создаем легкие решения сложных задач</title>
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+        <meta name="description" content="Создаем интерфейсы CRM систем, мобильные приложения, веб-сайты и цифровые сервисы для корпораций, малого и крупного бизнеса.">
+        <meta name="keywords" content="Advanced Studio, IT студия, веб-сайты, мобильные приложения, разработка">
+        <meta name="author" content="Ivan Plastun">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="shortcut icon" href="http://localhost:3000/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:3000/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:3000/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:3000/favicon-16x16.png">
+        <link rel="manifest" href="http://localhost:3000/site.webmanifest">
+        <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap">
+        <link rel="stylesheet" href="./libs/css/flaticon.css">
         <link rel="stylesheet" href="./css/main.css">
     </head>
     <body>
         @@include("./html/sections/header.html")
+        @@include("./html/sections/services.html")
+        @@include("./html/sections/about.html")
+        @@include("./html/sections/all-services.html")
+        @@include("./html/sections/portfolio.html")
+        @@include("./html/sections/blog.html")
+        @@include("./html/sections/video.html")
+        @@include("./html/sections/subscribe.html")
+        @@include("./html/sections/footer.html")
+        <div class="progress" hidden role="button" aria-label="scroll to top">
+            <i class="flaticon-left-arrow progress__icon"></i>
+            <svg class="progress__box" viewBox="-1 -1 120 120" width="100%" height="100%">
+                <circle id="default-circle" class="progress__circle" cx="60" cy="60" r="52" stroke="#aeaeae" stroke-width="4"></circle>
+                <circle id="active-circle" class="progress__circle" cx="60" cy="60" r="52" stroke-width="4" stroke="#3cb6f7" stroke-dasharray="0" stroke-dashoffset="0"></circle>
+            </svg>
+        </div>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="./js/index.js"></script>
     </body>
 </html>

@@ -2,8 +2,24 @@
 @import "./base/base";
 @import "./base/mixins";
 
+// Components
+@import "./components/button/button";
+@import "./components/mouse/mouse";
+@import "./components/logo/logo";
+@import "./components/scroll-to-top/scrollToTop";
+@import "./components/slider-nav/slider-nav";
+@import "./components/service/service";
 
-
+// sections
+@import "./sections/header";
+@import "./sections/services";
+@import "./sections/about";
+@import "./sections/all-services";
+@import "./sections/portfolio";
+@import "./sections/blog";
+@import "./sections/video";
+@import "./sections/subscribe";
+@import "./sections/footer";
 
 // utils
 @import "./utils/margins";

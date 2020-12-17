@@ -1,0 +1,44 @@
+.blog-wrapper {
+    padding: 50px 0;
+
+    @media (min-width: 992px) {
+        padding: 120px 0;
+    }
+}
+
+.blog-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog-col-1 {
+    flex: 1 0 100%;
+    max-width: 100%;
+
+    @media (min-width: 992px) {
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+        padding: 0 15px;
+    }
+
+}
+
+.blog-col-2 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    padding: 0 15px;
+
+    @media (min-width: 992px) {
+        display: block;
+    }
+}
+
+.blog-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+    @media (min-width: 768px) {
+        margin-top: 80px;
+    }
+}

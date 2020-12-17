@@ -47,8 +47,8 @@ function styles () {
                     removeEmpty: true,
                     removeDuplicateFontRules: true,
                     removeDuplicateMediaBlocks: true,
-                    removeDuplicateRules: true,
-                    removeUnusedAtRules: true
+                    removeDuplicateRules: false,
+                    removeUnusedAtRules: false
                 }
             }
         })))

@@ -7,6 +7,7 @@ import scripts from "./scripts"
 import sprites from "./svgsprite"
 import images from "./image"
 import fonts from "./fonts"
+import copyLibs from "./copy-libs"
 
 function server () {
     browserSync.init({
@@ -27,6 +28,7 @@ function server () {
     watch(paths.sprites.watch, parallel(sprites))
     watch(paths.image.watch, parallel(images))
     watch(paths.fonts.watch, parallel(fonts))
+    watch(paths.libs.css.watch, parallel(copyLibs))
 }
 
 export default server

@@ -1,0 +1,32 @@
+// Progress
+.progress {
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    right: 15px;
+    bottom: 25px;
+    z-index: 1;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    cursor: pointer;
+
+    @media (min-width: 768px) {
+        right: 50px;
+    }
+}
+
+.progress__icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: rotate(90deg) translate(-50%, 45%);
+    transform-origin: center;
+    color: #3cb6f7;
+    font-weight: bold;
+}
+
+.progress__circle {
+    transform: rotate(-90deg);
+    transform-origin: center;
+    fill: transparent;
+}
