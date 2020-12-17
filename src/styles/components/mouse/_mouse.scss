@@ -1,10 +1,9 @@
 .mouse-wrap {
-    position: absolute;
+    position: relative;
     display: inline-block;
-    left: 50%;
-    bottom: 30px;
-    transform: translateX(-50%);
+    align-self: center;
     z-index: 9;
+    margin-bottom: 30px;
     text-decoration: none;
 }
 

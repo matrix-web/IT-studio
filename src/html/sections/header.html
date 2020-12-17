@@ -1,18 +1,49 @@
-<header class="header">
-    <div class="header-wrapper">
+<header class="header header__mobile">
+    <div class="header__cover">
+        <!-- Slider main container -->
+        <div class="swiper-container header__swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide header__slide">
+                    <img class="header__img" src="../../img/images/bg_1.jpg" alt="Фоновое изображение">
+                </div>
+                <div class="swiper-slide header__slide">
+                    <img class="header__img" src="../../img/images/bg_2.jpg" alt="Фоновое изображение">
+                </div>
+                <div class="swiper-slide header__slide">
+                    <img class="header__img" src="../../img/images/bg_3.jpg" alt="Фоновое изображение">
+                </div>
+                ...
+            </div>
+            <!-- Navigation buttons -->
+            <div class="slider-nav">
+                <button class="slider-nav__button slider-nav--prev" aria-label="slide-previous"><i class="flaticon-left-arrow"></i></button>
+                <button class="slider-nav__button slider-nav--next" aria-label="slide-next"><i class="flaticon-next"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="header-top">
         <div class="container container--position-relative">
-            <nav class="header-nav" aria-label="nav">
-                <a class="header-nav__link" href="#"><span>Главная</span></a>
-                <a class="header-nav__link" href="#"><span>Наши проекты</span></a>
-                <a class="header-nav__link" href="#"><span>Услуги</span></a>
-                <a class="header-nav__link" href="#"><span>Новости</span></a>
-                <a class="header-nav__link" href="#"><span>Контакты</span></a>
-            </nav>
-            <button class="header__nav-mobile" aria-label="nav-button">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <div class="header-wrapper">
+                <div class="logo">
+                    <img src="../../img/logo/logo.svg" alt="logotype">
+                    <p class="logo__text">Advanced Studio</p>
+                </div>
+                <nav class="header-nav" aria-label="nav">
+                    <a class="header-nav__link" href="#"><span>Главная</span></a>
+                    <a class="header-nav__link" href="#"><span>Наши проекты</span></a>
+                    <a class="header-nav__link" href="#"><span>Услуги</span></a>
+                    <a class="header-nav__link" href="#"><span>Блог</span></a>
+                    <a class="header-nav__link" href="#"><span>Новости</span></a>
+                    <a class="header-nav__link" href="#"><span>Контакты</span></a>
+                </nav>
+                <button class="header__nav-mobile" aria-label="nav-button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </div>
     <div class="container">
@@ -20,6 +51,7 @@
             <div class="header-info">
                 <span class="header__subtitle">Передовая IT студия</span>
                 <h1 class="header__title">Мы создаем легкие решения сложных задач</h1>
+                <p class="header__description">Создаем интерфейсы CRM систем, мобильные приложения, веб-сайты и цифровые сервисы для корпораций, малого и крупного бизнеса</p>
                 <a href="#!" class="primary-button header__button" data-text="Наши проекты">
                     <span>Н</span>
                     <span>а</span>
@@ -47,8 +79,4 @@
             <span class="scroll-arrow arrow-three"></span>
         </div>
     </a>
-    <div class="slider-nav">
-        <button class="slider-nav__button slider-nav--prev" aria-label="nav-previous"><i class="flaticon-left-arrow"></i></button>
-        <button class="slider-nav__button slider-nav--next" aria-label="nav-next"><i class="flaticon-next"></i></button>
-    </div>
 </header>

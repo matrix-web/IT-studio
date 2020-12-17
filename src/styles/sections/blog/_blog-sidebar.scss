@@ -1,9 +1,34 @@
 $linkHover: #1345e6;
 $linkActive: #113dcf;
 
+.blog-sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    max-width: 280px;
+    background-color: $white;
+    overflow-y: scroll;
+    transform: translateX(-150%);
+    transition: transform .5s ease-in-out 0s;
+    z-index: 10;
+
+    @media (min-width: 992px) {
+        position: static;
+        max-width: initial;
+        background-color: transparent;
+        overflow-y: visible;
+        transform: none;
+    }
+}
+
+.blog-sidebar--active {
+    transform: translateX(0%);
+}
+
 .blog-sidebar-widget {
     background-color: #fbf9ff;
-    padding: 25px;
+    padding: 25px 20px;
     margin-bottom: 30px;
 
     &:last-child {

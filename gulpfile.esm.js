@@ -23,7 +23,7 @@ const paths = {
         dist: "./dist/css"
     },
     scripts: {
-        src: "./src/js/**/main.js",
+        src: "./src/js/**/index.js",
         watch: "./src/js/**/*.js",
         dist: "./dist/js"
     },

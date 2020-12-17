@@ -1,5 +1,6 @@
 module.exports = {
     entry: {
+        index: "./src/js/index.js",
         main: "./src/js/main.js"
     },
     output: {
