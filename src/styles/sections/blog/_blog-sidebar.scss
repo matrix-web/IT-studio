@@ -11,6 +11,7 @@ $linkActive: #113dcf;
     overflow-y: scroll;
     transform: translateX(-150%);
     transition: transform .5s ease-in-out 0s;
+    z-index: 10;
 
     @media (min-width: 992px) {
         position: static;
@@ -27,7 +28,7 @@ $linkActive: #113dcf;
 
 .blog-sidebar-widget {
     background-color: #fbf9ff;
-    padding: 25px;
+    padding: 25px 20px;
     margin-bottom: 30px;
 
     &:last-child {

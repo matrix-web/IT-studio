@@ -1,5 +1,6 @@
 'use strict'
 
+import './modules/header'
 import './modules/header-nav'
-// import './modules/swipeEvent'
-// import './modules/blog-notification'
+import './modules/scrollToTop'
+import './modules/aboutCounter'

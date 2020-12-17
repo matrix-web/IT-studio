@@ -3,30 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Создаем интерфейсы CRM систем, мобильные приложения, веб-сайты и цифровые сервисы для корпораций, малого и крупного бизнеса.">
+    <meta name="keywords" content="Advanced Studio, IT студия, веб-сайты, мобильные приложения, разработка">
+    <meta name="author" content="Ivan Plastun">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="./libs/css/flaticon.css">
     <link rel="stylesheet" href="./css/blog.css">
-    <title>IT-studio пост в блоге</title>
+    <title>>Advanced Studio - Двоичное дерево поиска на JavaScript</title>
 </head>
 <body class="right left">
     <header class="header blog-header">
-        <div class="header-wrapper">
-            <div class="container">
-                <nav class="header-nav">
-                    <a class="header-nav__link" href="#"><span>Главная</span></a>
-                    <a class="header-nav__link" href="#"><span>Наши проекты</span></a>
-                    <a class="header-nav__link" href="#"><span>Услуги</span></a>
-                    <a class="header-nav__link" href="#"><span>Блог</span></a>
-                    <a class="header-nav__link" href="#"><span>Новости</span></a>
-                    <a class="header-nav__link" href="#"><span>Контакты</span></a>
-                </nav>
-                <button class="header__nav-mobile" aria-label="nav-button">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+        <div class="header-top">
+            <div class="container container--position-relative">
+                <div class="header-wrapper">
+                    <div class="logo">
+                        <img src="../../img/logo/logo.svg" alt="logotype">
+                        <p class="logo__text">Advanced Studio</p>
+                    </div>
+                    <nav class="header-nav" aria-label="nav">
+                        <a class="header-nav__link" href="#"><span>Главная</span></a>
+                        <a class="header-nav__link" href="#"><span>Наши проекты</span></a>
+                        <a class="header-nav__link" href="#"><span>Услуги</span></a>
+                        <a class="header-nav__link" href="#"><span>Блог</span></a>
+                        <a class="header-nav__link" href="#"><span>Новости</span></a>
+                        <a class="header-nav__link" href="#"><span>Контакты</span></a>
+                    </nav>
+                    <button class="header__nav-mobile" aria-label="nav-button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
@@ -225,7 +242,7 @@
                                         <textarea class="form-control" name="comment" id="comment" cols="30" rows="10" placeholder="Напишите комментарий"></textarea>
                                     </div>
                                     <div class="form-field-group">
-                                        <div class="form-field-group__box mr-30">
+                                        <div class="form-field-group__box">
                                             <input class="form-control" type="text" name="name" placeholder="Имя">
                                         </div>
                                         <div class="form-field-group__box">
@@ -282,6 +299,13 @@
         </div>
     </main>
     @@include("./html/sections/footer.html")
+    <div class="progress" hidden role="button" aria-label="scroll to top">
+        <i class="flaticon-left-arrow progress__icon"></i>
+        <svg class="progress__box" viewBox="-1 -1 120 120" width="100%" height="100%">
+            <circle id="default-circle" class="progress__circle" cx="60" cy="60" r="52" stroke="#aeaeae" stroke-width="4"></circle>
+            <circle id="active-circle" class="progress__circle" cx="60" cy="60" r="52" stroke-width="4" stroke="#3cb6f7" stroke-dasharray="0" stroke-dashoffset="0"></circle>
+        </svg>
+    </div>
     <script src="js/main.js"></script>
 </body>
 </html>
